@@ -1,6 +1,6 @@
 body,html{margin:0;padding:0;height:100%;}
 body{
-  background: url("img/We.jpg");
+  background: url("src/img/We.jpg");
   background-size:cover;
   background-position: center;
   font-family: 'Cabin Condensed', sans-serif;
