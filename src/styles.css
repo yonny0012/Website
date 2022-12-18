@@ -1,16 +1,58 @@
-body,html{margin:0;padding:0;height:100%;}
-body{
-  background: url("img/We.jpg");
-  background-size:cover;
-  background-position: center;
-  font-family: 'Cabin Condensed', sans-serif;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+/* Estilos generales */
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-svg{
-  font-weight:bold;
-  max-width:600px;
-  height:auto;
+h1{
+  font-size: 2.5rem;
+  font-family: 'Rubik Dirt', cursive;
+}
+.seccion-oscura{
+  color: white;
+  background-color: #1b1b32;
+}
+/* Seccion hero */
+.hero{
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+.hero-main{
+  padding: 3rem;
+}
+
+.hero-img-main{
+  width: 200px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.hero-main h2{
+  font-size: 1.5rem;
+  color: #515151;
+
+}
+
+/* Barra de navegacion */
+.navbar{
+  padding: 2rem;
+  background-color: #f5f6f7;
+}
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Adaptable (responsivo) */
+@media screen and (max-width: 767px){
+  .navbar-brand {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .hero-img-inf{
+    max-width: 600px;
+  }
 }
