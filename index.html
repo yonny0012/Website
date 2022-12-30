@@ -1,33 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="src/styles.css">
-    <title>Ocean efect</title>
+  <!-- metadatos -->
+  <meta charset="utf-8">
+  <meta name="author" content="La Molécula Jankince">
+  <meta name="description" content="porafolio d edesarrollo web de La Molécula Jankince">
+  <meta name="keywords" content="HTML, CSS, JavaScript, React">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Título -->
+  <title>yonny-Dev | desarrollo web front-end</title>
+  <!-- favicon -->
+  <link rel="icon" href="src/img/code-slash.svg">
+  <!-- Bootstrap 5 via CDN-->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+  <!-- Bootstrap 5 via local_folder-->
+  <link href="src/CSS/B_CSS/bootstrap.min.css" rel="stylesheet">
+  <!-- Iconos de Bootstrap -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"> -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/CSS/styles.css">
+  
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
 </head>
-<body>
-   
-    <svg viewbox="0 0 100 20">
-        <defs>
-          <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="5%" stop-color="#326384"/>
-            <stop offset="95%" stop-color="#123752"/>
-          </linearGradient>
-          <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-            <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
-              <animateTransform
-                  attributeName="transform"
-                  begin="0s"
-                  dur="1.5s"
-                  type="translate"
-                  from="0,0"
-                  to="40,0"
-                  repeatCount="indefinite" />
-            </path>
-          </pattern>
-        </defs>
-        <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">la molécula</text>
-        <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.1">la molécula</text>
-      </svg>
- 
-</body>
+  <body>
+    <!-- <i class="bi bi-code-slash"></i> -->
+    <!-- <i class="bi bi-laptop"></i> -->
+
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-Toggler">
+          <a class="navbar-brand" href="#">
+            <img src="src/img/code-slash.svg" width="50" alt="logo de la pagina">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyecto">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion hero -->
+    <section class="hero align-items-strtch">
+      <div class="hero-main d-flex flex-column 
+        justify-content-center align-items-center">
+        <img class="hero-img-main rounded-circle" src="src/img/We.jpg"  width="200" alt="I am">
+        <h1>Hola, soy la Molécula Jankince</h1>
+        <h2>Aprendo desarrollo web front-end</h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-img-inf img-fluid" width="300" src="src/img/laptop.svg" alt="Logo_laptop">
+      </div>
+    </section>
+    
+      <!-- sobre mi -->
+      <section id="sobre-mi" class="sobre-mi seccion-oscura">
+        <div class="contenedor">
+          <h2 class="seccion-titulo texto-blanco">Conoce a La Molecula Jankince</h2>
+          <p class="seccion-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, optio consectetur consequuntur quisquam 
+            similique asperiores illum tempora odio natus quam recusandae sed, minima praesentium ipsa assumenda quas possimus
+            quos perspiciatis.</p>
+            
+        </div>
+      </section>
+    
+    <!-- Seccion experinecia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrolle web -->
+          <div class="columna col-12 col-md-4">
+            <!-- <i class="bi bi-laptop"></i> -->
+            <!-- <div class="bi-externo"> -->
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" class="bi bi-laptop" viewBox="0 0 16 16" fill="#fe0000a9"> 
+                <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+              </svg> 
+            <!-- </div> -->
+              
+            <p class="experiencia-titulo">Desarrollo web</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, explicabo blanditiis ullam ratione ab deleniti facilis aliquam maxime eum inventore amet repudiandae tempora architecto iure repellendus fuga neque ut laborum.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" class="bi bi-laptop" viewBox="0 0 16 16" fill="#00fe00a9"> 
+              <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+            </svg> 
+            
+            <p class="experiencia-titulo">Articulos</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, explicabo blanditiis ullam ratione ab deleniti facilis aliquam maxime eum inventore amet repudiandae tempora architecto iure repellendus fuga neque ut laborum.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Escribir</span>
+              <span class="badge text-bg-primary">Editar</span>
+              <span class="badge text-bg-primary">Blogs</span>
+              <span class="badge text-bg-primary">Publicar</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" class="bi bi-laptop" viewBox="0 0 16 16" fill="#0000fea9"> 
+              <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+            </svg> 
+              
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, explicabo blanditiis ullam ratione ab deleniti facilis aliquam maxime eum inventore amet repudiandae tempora architecto iure repellendus fuga neque ut laborum.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">FeeCodeCamp</span>
+              <span class="badge text-bg-primary">Web front-end developer</span>
+              <span class="badge text-bg-primary">Java developer</span>
+              <span class="badge text-bg-primary">Blender 3D</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion proyectos -->
+    <section id="proyecto" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-clara texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">
+        Estos son elgunos proyectos que he creado recientemente
+      </h3>
+      <!-- Galeria de proyecto -->
+      <div class="container text-center proyectos-contenedor">
+
+        <!-- Proyecto 1 -->
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img class="img" src="src/img/img1.jpg" alt="proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="iconos-contenedor">
+                  <a href="#" rel="noopener noreferrer">
+                    <!-- gtihub icon -->
+                    <i class="bi bi-github">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                    </i>
+                  </a>
+                  <a href="#" rel="noopener noreferrer"> 
+                    <!-- laptop icon -->
+                    <i class="bi bi-laptop">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                        <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img class="img" src="src/img/img1.jpg" alt="proyecto 2">
+              <div class="overlay">
+                <p>Proyecto 2</p>
+                <div class="iconos-contenedor">
+                  <a href="#" rel="noopener noreferrer">
+                    <!-- gtihub icon -->
+                    <i class="bi bi-github">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                    </i>
+                  </a>
+                  <a href="#" rel="noopener noreferrer"> 
+                    <!-- laptop icon -->
+                    <i class="bi bi-laptop">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                        <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->    
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img class="img" src="src/img/img1.jpg" alt="proyecto 3">
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a href="#" rel="noopener noreferrer">
+                    <!-- gtihub icon -->
+                    <i class="bi bi-github">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                    </i>
+                  </a>
+                  <a href="#" rel="noopener noreferrer"> 
+                    <!-- laptop icon -->
+                    <i class="bi bi-laptop">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                        <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->  
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img class="img" src="src/img/img1.jpg" alt="proyecto 4">
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a href="#" rel="noopener noreferrer">
+                    <!-- gtihub icon -->
+                    <i class="bi bi-github">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                    </i>
+                  </a>
+                  <a href="#" rel="noopener noreferrer"> 
+                    <!-- laptop icon -->
+                    <i class="bi bi-laptop">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                        <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->  
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img class="img" src="src/img/img1.jpg" alt="proyecto 5">
+              <div class="overlay">
+                <p>Proyecto 5</p>
+                <div class="iconos-contenedor">
+                  <a href="#" rel="noopener noreferrer">
+                    <!-- gtihub icon -->
+                    <i class="bi bi-github">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                    </i>
+                  </a>
+                  <a href="#" rel="noopener noreferrer"> 
+                    <!-- laptop icon -->
+                    <i class="bi bi-laptop">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                        <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->      
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img class="img" src="src/img/img1.jpg" alt="proyecto 6">
+              <div class="overlay">
+                <p>Proyecto 6</p>
+                <div class="iconos-contenedor">
+                  <a href="#" rel="noopener noreferrer">
+                    <!-- gtihub icon -->
+                    <i class="bi bi-github">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                    </i>
+                  </a>
+                  <a href="#" rel="noopener noreferrer"> 
+                    <!-- laptop icon -->
+                    <i class="bi bi-laptop">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                        <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" target="_blank">
+        <button type="button" class="btn btn-info" rel="noopener noreferrer">
+          Más proyectos
+          <i class="bi bi-arrow-right-circle-fill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+            </svg>
+          </i>
+        </button>
+      </a>
+    </section>
+    <!-- Articulos  -->
+    <section class="articulos justify-content-start">
+      <h2>Articulos</h2>
+      <div class="card">
+        <div class="card-header">
+          Más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="#" target="_blank" rel="noopener noreferrer"></a>
+          <li class="list-group-item">primero</li>
+          <li class="list-group-item">segundo</li>
+          <li class="list-group-item">tercero</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Archivos JavaScript de Bootstrap@5.2.3 -->
+    <!-- Online -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    <!-- Offline -->
+    <script src="src/Js/bootstrap.min.js"></script>
+  </body>
 </html>
