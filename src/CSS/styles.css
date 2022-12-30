@@ -46,7 +46,7 @@ h1{
 
 .hero-img-main{
   width: 200px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin: 20px;
   
 }
@@ -167,6 +167,49 @@ h1{
 .articulos .card-header{
   font-weight: bold;
 }
+/* Testimoios */
+.testimonios{
+  padding: 40px 40px 80px 40px;
+}
+.testimonios .carousel{
+  max-width: 600px;
+}
+.carousel-item{
+  height: 500px;
+}
+.carousel-item .container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imagen-testimonio{
+  height: 150px;
+  margin: 10px 10px 20px 10px;
+}
+.testimonio-texto{
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.testimonio-info{
+  font-weight: bold;
+  text-align: center;
+}
+.testimonio-info p{
+  margin-bottom: 0;
+}
+.testimonio-info .cliente{
+  font-size: 1.2rem;
+}
+.testimonio-info .cargo{
+  font-size: 0.9rem;
+  color: #656060;
+}
+
 /* Adaptable (responsivo) */
 @media screen and (max-width: 767px){
   .navbar-brand {
@@ -185,5 +228,14 @@ h1{
   .overlay svg{
     width: 40px;
     height: 40px;
+  }
+}
+@media screen and (max-width: 800px){
+  .testimonio-texto{
+    font-size: 18px;
+  }
+  .testimonio-imagen{
+    height: 100%;
+    width: 120px;
   }
 }
