@@ -1,5 +1,5 @@
 import code from "../Items/img/code-slash.svg"; 
-import { BrowserRouter, Link } from "react-router-dom"; 
+import { Link } from "react-router-dom"; 
 export const NavBar = ()=>{
   return (
     <nav className="navbar navbar-expand-md navbar-light">
