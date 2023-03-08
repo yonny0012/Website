@@ -36,9 +36,10 @@ h1{
 
 /* Seccion hero */
 .hero{
-  background-color: #f5f6f7;
+  background-color: #2f78c0;
   min-height: 450px;
   text-align: center;
+  
 }
 .hero-main{
   padding: 3rem;

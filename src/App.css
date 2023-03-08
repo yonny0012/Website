@@ -1,0 +1,22 @@
+@media screen and (max-width: 767px){
+    .navbar-brand {
+      display: none;
+    }
+  }
+
+  .hero-img-main{
+    width: 150px;
+    margin: 20px;
+  }
+  .hero{
+    /* background-color: #f5f6f7; */
+    min-height: 450px;
+    text-align: center;
+    /* fallback for old browsers */
+    background: #08081de0;  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #243B55, #141E30); 
+
+  }
