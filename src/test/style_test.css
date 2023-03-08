@@ -1,0 +1,16 @@
+body,html{margin:0;padding:0;height:100%;}
+body{
+  background: url("http://127.0.0.1:5500/src/img/we.jpg");
+  background-size:cover;
+  background-position: center;
+  font-family: 'Cabin Condensed', sans-serif;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+svg{
+  font-weight:bold;
+  max-width:600px;
+  height:auto;
+}
