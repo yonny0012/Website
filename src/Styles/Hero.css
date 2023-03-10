@@ -1,0 +1,18 @@
+.hero{
+    background-color: #2f78c0;
+    min-height: 450px;
+    text-align: center;
+  }
+  .hero-main{
+    padding: 3rem;
+  }
+  
+  .hero-img-main{
+    width: 150px;
+    /* border-radius: 50%; */
+    margin: 20px;
+  }
+  .hero-main h2{
+    font-size: 1.5rem;
+    color: #515151;
+  }
