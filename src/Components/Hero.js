@@ -8,8 +8,8 @@ export const Hero = ()=>{
   return(
     <section className="hero align-items-strtch">
       <div className="hero-main d-flex flex-column justify-content-center align-items-center">
-        <img className="hero-img-main rounded-pill" src={ avat }  width="200" alt="I am" />
-        <TextOcean text= "Hola, soy la Molécula Jankince" />
+        <img className="hero-img-main rounded-pill" src={ avat }  width="200" alt="Imagen de Yonny Domínguez" />
+        <TextOcean text= "Hola, soy Yonny Domínguez" />
       </div>
       <div className="hero-inferior">
         <img className="hero-img-inf img-fluid" width="150" src={laptop_Logo} alt="Logo_laptop" />

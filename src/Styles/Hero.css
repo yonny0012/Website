@@ -1,18 +1,18 @@
 .hero{
-    background-color: #2f78c0;
+    /* background-color: #f5f6f7; */
     min-height: 450px;
     text-align: center;
+    /* fallback for old browsers */
+    background: #080f1fd2;  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom , #243B55, #141E30);  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom , #15151af3, #1e1d63ee); 
   }
   .hero-main{
-    padding: 3rem;
+    padding: 1rem;
   }
-  
   .hero-img-main{
     width: 150px;
-    /* border-radius: 50%; */
-    margin: 20px;
-  }
-  .hero-main h2{
-    font-size: 1.5rem;
-    color: #515151;
+    margin-bottom: 20px;
   }
