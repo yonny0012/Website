@@ -7,10 +7,14 @@ import { Hero } from './Components/Hero';
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
-      
-      <CoustomProgrssBar /> 
+      <div className="fijo">
+        <NavBar />
+        <CoustomProgrssBar height={5} /> 
+      </div>
       <div>
+        <Hero />
+        <Hero />
+        <Hero />
         <Hero />
       </div>
     </BrowserRouter>
