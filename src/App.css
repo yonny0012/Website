@@ -3,4 +3,6 @@
       display: none;
     }
   }
- 
+.coustom-progress-bar{
+  height: 5px;
+}

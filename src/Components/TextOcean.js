@@ -34,7 +34,7 @@ export const TextOcean = ({ text })=>{
         </pattern>
       </defs>
       <text ref={textRef} className="text" text-anchor="middle" x="50%" y="15" font-size="30" fill="url(#wave)"  fill-opacity="0.6" alignmentBaseline="middle">{ text }</text>
-      <text ref={textRef} className="text" text-anchor="middle" x="50%" y="15" font-size="30" fill="url(#gradient)" fill-opacity="0.1" alignmentBaseline="middle">{ text }</text>
+      <text ref={textRef} className="text" text-anchor="middle" x="50%" y="15" font-size="30" fill="url(#gradient)" fill-opacity="0.1" alignmentBaseline="middle" >{ text }</text>
     </svg>
   );
 }
