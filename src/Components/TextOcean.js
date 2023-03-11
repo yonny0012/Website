@@ -1,8 +1,20 @@
 import "../Styles/TextOcean.css";
+// generado por chatGpt
+import { useState, useRef, useEffect } from 'react';
 
 export const TextOcean = ({ text })=>{
+  
+  // @cahtGpt
+  const [width, setWidth] = useState(0);
+  const textRef = useRef();
+  useEffect(() => {
+    if (textRef.current) {
+      setWidth(textRef.current.getBBox().width);
+    }
+  }, [text]);
+
   return(
-    <svg calssName="text-ocean" viewbox="0 0 100 20" width="380px" height="25px">
+    <svg calssName="text-ocean" viewbox={`0 0 ${width} 20`} width={width} height="35px">
       <defs>
         <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="3">
           <stop offset="5%" stop-color="#41edf3"/>
@@ -21,8 +33,8 @@ export const TextOcean = ({ text })=>{
           </path>
         </pattern>
       </defs>
-      <text className="text" text-anchor="middle" x="50%" y="15" font-size="30" fill="url(#wave)"  fill-opacity="0.6" alignmentBaseline="middle">{ text }</text>
-      <text className="text" text-anchor="middle" x="50%" y="15" font-size="30" fill="url(#gradient)" fill-opacity="0.1" alignmentBaseline="middle">{ text }</text>
+      <text ref={textRef} className="text" text-anchor="middle" x="50%" y="15" font-size="30" fill="url(#wave)"  fill-opacity="0.6" alignmentBaseline="middle">{ text }</text>
+      <text ref={textRef} className="text" text-anchor="middle" x="50%" y="15" font-size="30" fill="url(#gradient)" fill-opacity="0.1" alignmentBaseline="middle">{ text }</text>
     </svg>
   );
 }
