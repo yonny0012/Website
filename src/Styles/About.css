@@ -1,0 +1,13 @@
+.seccion-texto{
+  font-size: 1.2rem;
+}
+.sobre-mi{
+  color: #41edf3;
+  background: linear-gradient(to bottom, #1e1d63ee, #15151af3); 
+  height: 300px;
+  padding: 10px;
+}
+.sobre-mi .contenedor{
+  max-width: 600px;
+  text-align: center;
+}

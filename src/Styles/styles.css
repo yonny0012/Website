@@ -308,10 +308,3 @@ footer{
     width: 120px;
   }
 }
-
-
-/* Testeo de la letra animada */
-.hero-main svg{
-  max-width:600px;
-  height:auto;
-}

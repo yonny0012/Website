@@ -3,20 +3,19 @@ import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import { NavBar } from './Components/NavBar';
 import { Hero } from './Components/Hero';
+import { About } from './Components/About';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="fijo">
+      <header>
         <NavBar />
         <CoustomProgrssBar height={5} /> 
-      </div>
-      <div>
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
-      </div>
+      </header>
+      <Hero />
+      <About name="Yonny">
+        Actualmente soy estudiane de <strong>Ingeniería en Ciencias Informáticas</strong> en la <a href='www.uci.cu' target={'_blank'}>Universidad de las Ciencias Informáticas</a>
+      </About>
     </BrowserRouter>
   );
 }

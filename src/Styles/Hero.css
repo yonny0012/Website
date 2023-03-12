@@ -1,11 +1,12 @@
 .hero{
+    margin-top: 60px;
     /* background-color: #f5f6f7; */
     min-height: 450px;
     text-align: center;
     /* fallback for old browsers */
     background: #080f1fd2;  
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to bottom , #243B55, #141E30);  
+    background: -webkit-linear-gradient(to bottom , #243B55, #141E30); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to bottom , #15151af3, #1e1d63ee); 
   }
@@ -15,4 +16,9 @@
   .hero-img-main{
     width: 150px;
     margin-bottom: 20px;
+  }
+  @media screen and (min-width: 700px) {
+    .hero-img-inf{
+      max-width: 600px;
+    }
   }
