@@ -12,7 +12,7 @@ export const Hero = ()=>{
         <TextOcean text= "Hola, soy Yonny Domínguez" />
       </div>
       <div className="hero-inferior">
-        <img className="hero-img-inf img-fluid" width="150" src={laptop_Logo} alt="Logo_laptop" />
+        <img className="hero-img-inf img-fluid" src={laptop_Logo} alt="Logo_laptop" />
       </div>
     </section>
   )

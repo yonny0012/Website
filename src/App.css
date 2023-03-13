@@ -23,6 +23,22 @@ h1{
 }
 .seccion-titulo{
   font-size: 2rem;
-  padding: 15px 0;
   font-family: 'Rubik Dirt', cursive;
+}
+.seccion-texto{
+  font-size: 1.2rem;
+}
+.seccion-descripcion{
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+
+.seccion-oscura{
+  color: white;
+  background-color: #1b1b32;
+}
+.seccion-clara{
+  color: black;
+  background-color: white;
 }
