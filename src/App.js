@@ -10,7 +10,7 @@ import { PrejectSections } from './Components/ProjectSection';
 function App() {
   return (
     <BrowserRouter>
-      <header>
+      <header className='fixed-top'>
         <NavBar />
         <CoustomProgrssBar height={5} />
       </header>

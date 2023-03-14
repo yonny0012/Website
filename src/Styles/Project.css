@@ -26,7 +26,7 @@
 .overlay p{
   font-size: 25px;
   font-weight: bold;
-  margin-bottom: o;
+  margin-bottom: 0;
 }
 .overlay .iconos-contenedor{
   display: flex;

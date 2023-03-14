@@ -11,12 +11,13 @@ export const PrejectSections = () =>{
       </h3>
       {/* Galeria de proyecto  */}
       <div className="container text-center proyectos-contenedor">
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-
+        <div className="row">
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+        </div>
       </div>
       <Link href="#" target="_blank">
         <button type="button" className="btn btn-info" rel="noopener noreferrer">
