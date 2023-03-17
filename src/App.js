@@ -6,6 +6,7 @@ import { Hero } from './Components/Hero';
 import { About } from './Components/About';
 import { Experience } from './Components/Experience';
 import { PrejectSections } from './Components/ProjectSection';
+import { Footer } from './Components/Footer';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       </About>
       <Experience />
       <PrejectSections />
+      <Footer />
     </BrowserRouter>
   );
 }
