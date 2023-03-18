@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { Project } from "./Project";
+import { Hero } from "./Hero";
 import "../Styles/PrejectSections.css" 
 import { React ,useState, useEffect } from "react";
 
 export const PrejectSections = () =>{
   const username = 'yonny0012';
-  const token = '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';
+  // const token = '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';
+  const token = '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';
 
   const[repo, setRepo] = useState(null);
 
@@ -16,6 +18,7 @@ export const PrejectSections = () =>{
       }
     })
     .then(response => response.json())
+    // .then(cns => console.log(cns))
     .then(data => setRepo(data));
   },[]);
 
@@ -37,6 +40,8 @@ export const PrejectSections = () =>{
             )
           }
           
+
+           <Hero />
         </div>
       </div>
       <Link href="#" target="_blank">
