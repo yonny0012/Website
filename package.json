@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
+    "gh-pages": "^5.0.0",
     "mdb-react-ui-kit": "^5.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
@@ -18,10 +19,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
+
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject"    
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +44,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://yonny0012.github.io/my_app"
 }
