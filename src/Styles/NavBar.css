@@ -1,0 +1,10 @@
+@media screen and (max-width: 767px){
+  .navbar-brand {
+    display: none;
+  }
+}
+header{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}

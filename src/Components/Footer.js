@@ -1,40 +1,44 @@
 import "../Styles/Footer.css";
 import { Link } from "react-router-dom";
+import messenger from "../Items/img/messenger.svg";
+import linkedin from "../Items/img/linkedin.svg";
+import facebook from "../Items/img/facebook.svg";
+import telegram from "../Items/img/telegram.svg";
+import twitter from "../Items/img/twitter.svg";
+import whatsapp from "../Items/img/whatsapp.svg";
+import github from "../Items/img/github.svg";
+// import messenger from "../Items/img/messenger.svg";
+
 
 export const Footer = () =>{
   return(
-    <footer className="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <footer className="d-flex flex-column align-items-center justify-content-center">
       <div className="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
         <Link href="http://" target="_blank" rel="noopener noreferrer">
-          <img className="footer-icono" src="src/img/messenger.svg" alt="messenger" />
+          <img className="footer-icono" src={ messenger } alt="messenger" />
         </Link>
         <Link href="http://" target="_blank" rel="noopener noreferrer">
-          <img className="footer-icono" src="src/img/linkedin.svg" alt="linkedin" />
+          <img className="footer-icono" src={ linkedin } alt="linkedin" />
         </Link>
         <Link href="http://" target="_blank" rel="noopener noreferrer">
-          <img className="footer-icono" src="src/img/facebook.svg" alt="facebook" />
+          <img className="footer-icono" src={ facebook } alt="facebook" />
         </Link>
         <Link href="http://" target="_blank" rel="noopener noreferrer">
-          <img className="footer-icono" src="src/img/telegram.svg" alt="telegram" />
+          <img className="footer-icono" src={ telegram } alt="telegram" />
         </Link>
         <Link href="http://" target="_blank" rel="noopener noreferrer">
-          <img className="footer-icono" src="src/img/twitter.svg" alt="twitter" />
+          <img className="footer-icono" src={ twitter } alt="twitter" />
         </Link>
         <Link href="http://" target="_blank" rel="noopener noreferrer">
-          <img className="footer-icono" src="src/img/whatsapp.svg" alt="whatsapp" />
+          <img className="footer-icono" src={ whatsapp } alt="whatsapp" />
         </Link>
+        
         <Link href="http://" target="_blank" rel="noopener noreferrer">
-          <img className="footer-icono" src="src/img/youtube.svg" alt="youtube" />
-        </Link>
-        <Link href="http://" target="_blank" rel="noopener noreferrer">
-          <img className="footer-icono" src="src/img/google-play.svg" alt="google-play" />
-        </Link>
-        <Link href="http://" target="_blank" rel="noopener noreferrer">
-          <img className="footer-icono" src="src/img/github.svg" alt="github" />
+          <img className="footer-icono" src={ github } alt="github" />
         </Link>
       </div>
       <p className="footer-texto text-center">
-        Aprendo y creo todos los dias. <br />
+        Aprendo y creo. <br />
         Creemos un proyecto juntos.
       </p>
     </footer>

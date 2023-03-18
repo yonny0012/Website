@@ -1,5 +1,5 @@
 import { CoustomProgrssBar } from './Components/CoustomProgressBar';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import './App.css';
 import { NavBar } from './Components/NavBar';
 import { Hero } from './Components/Hero';
@@ -19,15 +19,9 @@ function App() {
       <About name="Yonny">
         <p>
           Actualmente soy estudiante de <strong>Ingeniería en Ciencias 
-          Informáticas</strong> en la <a href='www.uci.cu' target={'_blank'}>
-          Universidad de las Ciencias Informáticas</a> de Cuba. Curso el 4to año
+          Informáticas</strong> en la <Link to='http://www.uci.cu' target={'_blank'}><abbr title='Universidad de las Ciencias Informáticas'>
+          UCI</abbr></Link> de Cuba. Curso el 4to año
           de la carrera.
-          <br/><br/>
-          Actualmente soy estudiante de <strong>Ingeniería en Ciencias 
-          Informáticas</strong> en la <a href='www.uci.cu' target={'_blank'}>
-          Universidad de las Ciencias Informáticas</a> de Cuba. Curso el 4to año
-          de la carrera.
-        <br/>
         </p>
       </About>
       <Experience />

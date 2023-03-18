@@ -27,24 +27,26 @@
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 0;
+  color: #41edf3;
 }
 .overlay .iconos-contenedor{
   display: flex;
 }
 .overlay i{
-  color: black;
-  font-size: 60px;
-  margin: 10px;
+  color: white;
+  font-size: 40px;
+  margin: 30px;
+  /* width: 50px;
+  height: 50px; */
 }
-.overlay svg{
-  width: 60px;
-  height: 60px;
+.overlay .bi-info-circle{
+  font-size: 30px;
 }
 @media screen and (max-width: 400px){
   .overlay p{
     font-size: 18px;
   }
-  .overlay svg{
+  .overlay i{
     width: 40px;
     height: 40px;
   }

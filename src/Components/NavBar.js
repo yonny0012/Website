@@ -1,3 +1,4 @@
+import "../Styles/NavBar.css";
 import code from "../Items/img/code-slash.svg"; 
 import { Link } from "react-router-dom"; 
 export const NavBar = ()=>{

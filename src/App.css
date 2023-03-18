@@ -1,16 +1,4 @@
-@media screen and (max-width: 767px){
-    .navbar-brand {
-      display: none;
-    }
-  }
-.coustom-progress-bar{
-  height: 5px;
-}
-header{
-  position: fixed;
-  top: 0px;
-  width: 100%;
-}
+
 section{
   display: flex;
   flex-direction: column;
@@ -32,13 +20,10 @@ h1{
   font-size: 1.2rem;
   color: #584e4e;
 }
-
-
-.seccion-oscura{
-  color: white;
-  background-color: #1b1b32;
-}
 .seccion-clara{
   color: black;
   background-color: white;
+}
+body{
+  margin-top: 60px;
 }
